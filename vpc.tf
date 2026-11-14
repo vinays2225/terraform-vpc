@@ -47,7 +47,7 @@ resource "aws_subnet" "private" {
 }
 
 resource "aws_subnet" "database" {
-  count             = lengthA(var.database-sub-cidr)
+  count             = length(var.database-sub-cidr)
   vpc_id            = aws_vpc.main.id
   cidr_block        = var.database-sub-cidr[count.index]
   availability_zone = local.az-required[count.index]
