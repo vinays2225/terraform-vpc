@@ -57,3 +57,33 @@ variable "database-sub-tags" {
   type    = map(any)
   default = {}
 }
+
+#optional
+variable "public-route-tags" {
+  type    = map(any)
+  default = {}
+}
+
+#optional
+variable "private-route-tags" {
+  type    = map(any)
+  default = {}
+}
+
+#optional
+variable "database-route-tags" {
+  type    = map(any)
+  default = {}
+}
+
+#optional
+variable "eip-tags" {
+  type    = map(any)
+  default = {}
+}
+
+#optional
+variable "nat-gw-tags" {
+  type    = map(any)
+  default = {}
+}
