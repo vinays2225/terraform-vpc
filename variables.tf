@@ -87,3 +87,13 @@ variable "nat-gw-tags" {
   type    = map(any)
   default = {}
 }
+
+variable "peering-tags" {
+  type=map
+  default = {}
+}
+
+variable "is_peering_required" {
+  type = bool
+  default = false
+}
